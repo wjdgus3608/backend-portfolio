@@ -1,0 +1,8 @@
+server:
+  port: 7001
+my:
+  api-client-server: "http://localhost:9091"
+  db-client-server: "http://localhost:3030"
+  account-front: "43115686"
+  account-back: "01"
+  ticket: 400000

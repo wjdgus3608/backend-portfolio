@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date List</title>
+</head>
+<body>
+<h1>날짜 목록</h1>
+<ul>
+    <!-- dates 리스트에서 각 날짜를 링크로 표시 -->
+    <th:block th:each="date : ${data}">
+        <li>
+            <a th:href="@{/stock/{date}(date=${date})}" th:text="${date}"></a>
+        </li>
+    </th:block>
+</ul>
+</body>
+</html>

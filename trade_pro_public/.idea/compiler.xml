@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.20/18bcea7d5df4d49227b4a0743a536208ce4825bb/lombok-1.18.20.jar" />
+        </processorPath>
+        <module name="TradePro.app-faketrade.main" />
+        <module name="TradePro.app-webapp.main" />
+        <module name="TradePro.Common.main" />
+        <module name="TradePro.app-logdb.main" />
+        <module name="TradePro.Domain.main" />
+        <module name="TradePro.app-boxlog.main" />
+        <module name="TradePro.app-realtrade.main" />
+        <module name="TradePro.client.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11" />
+  </component>
+</project>

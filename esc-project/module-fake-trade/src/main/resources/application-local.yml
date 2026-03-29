@@ -1,0 +1,7 @@
+server:
+  port: 8000
+
+my:
+#  api-client-server: "http://localhost:9090"
+  api-client-server: "http://localhost:9091"
+  db-client-server: "http://localhost:1010"

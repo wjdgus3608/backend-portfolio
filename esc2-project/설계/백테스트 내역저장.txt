@@ -1,0 +1,744 @@
+---------------------------------------------------------
+OB로직 bottom~top 사이에서 매도로 변경
+레버리지 넘으면 매매안하기
+지정가 매수
+
+5분봉/15분봉/1시간봉
+20~25년
+0.5%상승 / 1%상승
+
+
+5분봉/20년/0.5% 상승
+
+2026-02-08T17:11:20.257+09:00  INFO 55412 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101835.053181713 / 수익금액 : 1835.0531817129959 / 수익률 : 11.469082385706225% / 총거래횟수 : 593(199/394) / 승률 : 33.558178
+2026-02-08T17:11:20.258+09:00  INFO 55412 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.04151877536904569
+2026-02-08T17:11:20.258+09:00  INFO 55412 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.040542763157894623
+2026-02-08T17:11:20.258+09:00  INFO 55412 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.0
+2026-02-08T17:11:20.258+09:00  INFO 55412 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.0
+2026-02-08T17:11:20.258+09:00  INFO 55412 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 241.4257677651999
+2026-02-08T17:11:20.258+09:00  INFO 55412 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99883.23238505963
+2026-02-08T17:11:20.258+09:00  INFO 55412 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.2600644124037896%/-0.47705748586504343%/0.0314221435224828%
+2026-02-08T17:11:20.258+09:00  INFO 55412 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 5.926016931945014%/-0.2876282089611777%/0.9557568654755185%
+2026-02-08T17:11:20.258+09:00  INFO 55412 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 178/11
+
+5분봉/21년/0.5% 상승
+2026-02-08T17:16:03.943+09:00  INFO 67900 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 108500.93113488128 / 수익금액 : 8500.931134881277 / 수익률 : 53.130819593007985% / 총거래횟수 : 4045(1389/2656) / 승률 : 34.338688
+2026-02-08T17:16:03.943+09:00  INFO 67900 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.03644767534942017
+2026-02-08T17:16:03.944+09:00  INFO 67900 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.049511794694547584
+2026-02-08T17:16:03.944+09:00  INFO 67900 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.047350888324873
+2026-02-08T17:16:03.944+09:00  INFO 67900 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.045338159985873094
+2026-02-08T17:16:03.944+09:00  INFO 67900 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 330.3057386931757
+2026-02-08T17:16:03.944+09:00  INFO 67900 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99943.87928689278
+2026-02-08T17:16:03.944+09:00  INFO 67900 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 3.4682336905771995%/-2.046516264010097%/0.14556388929591227%
+2026-02-08T17:16:03.944+09:00  INFO 67900 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 16.651661311386942%/-0.8005621598740618%/4.427568299417332%
+2026-02-08T17:16:03.944+09:00  INFO 67900 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 712/124
+
+
+
+5분봉/22년/0.5% 상승
+2026-02-08T17:30:16.518+09:00  INFO 70416 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 103613.03554610329 / 수익금액 : 3613.0355461032887 / 수익률 : 22.581472163145555% / 총거래횟수 : 1996(666/1330) / 승률 : 33.366734
+2026-02-08T17:30:16.518+09:00  INFO 70416 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.02538232488219483
+2026-02-08T17:30:16.518+09:00  INFO 70416 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.0458838491769783
+2026-02-08T17:30:16.518+09:00  INFO 70416 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.03751187084520424
+2026-02-08T17:30:16.518+09:00  INFO 70416 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.040258806613946874
+2026-02-08T17:30:16.518+09:00  INFO 70416 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 325.76676578283127
+2026-02-08T17:30:16.518+09:00  INFO 70416 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99920.58805428912
+2026-02-08T17:30:16.518+09:00  INFO 70416 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.0662073779349157%/-1.3184211852180852%/0.06186704702231659%
+2026-02-08T17:30:16.518+09:00  INFO 70416 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 4.885890915147774%/-0.8752945183747215%/1.8817893469287963%
+2026-02-08T17:30:16.519+09:00  INFO 70416 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 340/34
+
+5분봉/23년/0.5% 상승
+2026-02-08T17:39:13.924+09:00  INFO 45608 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 100850.46441626224 / 수익금액 : 850.4644162622426 / 수익률 : 5.315402601639016% / 총거래횟수 : 851(272/579) / 승률 : 31.962399
+2026-02-08T17:39:13.925+09:00  INFO 45608 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.01700712740231647
+2026-02-08T17:39:13.925+09:00  INFO 45608 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.014741697525249231
+2026-02-08T17:39:13.925+09:00  INFO 45608 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.03401185261530526
+2026-02-08T17:39:13.925+09:00  INFO 45608 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.031218811130184876
+2026-02-08T17:39:13.925+09:00  INFO 45608 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 210.04375244640732
+2026-02-08T17:39:13.925+09:00  INFO 45608 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99713.52455569677
+2026-02-08T17:39:13.925+09:00  INFO 45608 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 0.965474479984914%/-0.6290267859360029%/0.014562746853805522%
+2026-02-08T17:39:13.925+09:00  INFO 45608 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 1.9105231122090116%/-0.9358936470899607%/0.4429502168032513%
+2026-02-08T17:39:13.925+09:00  INFO 45608 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 134/20
+
+
+5분봉/24년/0.5% 상승
+2026-02-08T17:58:00.892+09:00  INFO 34064 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 100524.0370084435 / 수익금액 : 524.037008443498 / 수익률 : 3.275231302771863% / 총거래횟수 : 1197(365/832) / 승률 : 30.492899
+2026-02-08T17:58:00.892+09:00  INFO 34064 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.023178569558615747
+2026-02-08T17:58:00.892+09:00  INFO 34064 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.026043691894375942
+2026-02-08T17:58:00.892+09:00  INFO 34064 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.03618421052631571
+2026-02-08T17:58:00.892+09:00  INFO 34064 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.0497041971397959
+2026-02-08T17:58:00.892+09:00  INFO 34064 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 285.66777905748154
+2026-02-08T17:58:00.893+09:00  INFO 34064 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99945.87696649502
+2026-02-08T17:58:00.893+09:00  INFO 34064 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.9020250600213329%/-1.4768018405718977%/0.008973236445950309%
+2026-02-08T17:58:00.893+09:00  INFO 34064 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 2.545872514699295%/-1.0409656794719921%/0.2729359418976552%
+2026-02-08T17:58:00.893+09:00  INFO 34064 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 204/29
+
+5분봉/25년/0.5% 상승
+2026-02-08T18:02:34.649+09:00  INFO 74908 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101067.31190254462 / 수익금액 : 1067.3119025446213 / 수익률 : 6.6706993909038825% / 총거래횟수 : 1081(338/743) / 승률 : 31.267345
+2026-02-08T18:02:34.650+09:00  INFO 74908 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.015781406702367162
+2026-02-08T18:02:34.650+09:00  INFO 74908 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.032537373084809085
+2026-02-08T18:02:34.650+09:00  INFO 74908 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.037158845474180136
+2026-02-08T18:02:34.650+09:00  INFO 74908 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.045622828501452384
+2026-02-08T18:02:34.650+09:00  INFO 74908 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 256.70007231296904
+2026-02-08T18:02:34.650+09:00  INFO 74908 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99964.3723629068
+2026-02-08T18:02:34.650+09:00  INFO 74908 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.4013570626147156%/-1.1349510981644926%/0.01827588874220242%
+2026-02-08T18:02:34.650+09:00  INFO 74908 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 3.546494456675828%/-0.38516448577074697%/0.555891615908657%
+2026-02-08T18:02:34.650+09:00  INFO 74908 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 179/24
+
+
+15분봉/20년/0.5% 상승
+2026-02-08T18:10:59.873+09:00  INFO 66900 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 100574.14531513164 / 수익금액 : 574.1453151316382 / 수익률 : 3.588408219572739% / 총거래횟수 : 666(217/449) / 승률 : 32.582584
+2026-02-08T18:10:59.873+09:00  INFO 66900 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.029935720844811775
+2026-02-08T18:10:59.873+09:00  INFO 66900 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.04070258402296911
+2026-02-08T18:10:59.873+09:00  INFO 66900 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.0
+2026-02-08T18:10:59.873+09:00  INFO 66900 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.0
+2026-02-08T18:10:59.873+09:00  INFO 66900 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 223.32356157640015
+2026-02-08T18:10:59.873+09:00  INFO 66900 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99935.48535731382
+2026-02-08T18:10:59.873+09:00  INFO 66900 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.2048868533475798%/-0.820737732748421%/0.009831255396089696%
+2026-02-08T18:10:59.874+09:00  INFO 66900 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 1.3735758333763444%/-0.44641266819371594%/0.29903401829772824%
+2026-02-08T18:10:59.874+09:00  INFO 66900 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 134/13
+
+15분봉/21년/0.5% 상승
+2026-02-08T18:21:03.238+09:00  INFO 74100 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 105713.92567214556 / 수익금액 : 5713.92567214556 / 수익률 : 35.71203545090975% / 총거래횟수 : 3341(1084/2257) / 승률 : 32.445377
+2026-02-08T18:21:03.238+09:00  INFO 74100 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.04371944006015116
+2026-02-08T18:21:03.239+09:00  INFO 74100 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.04621393718895617
+2026-02-08T18:21:03.239+09:00  INFO 74100 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.04745078243311451
+2026-02-08T18:21:03.239+09:00  INFO 74100 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.04987085870986252
+2026-02-08T18:21:03.239+09:00  INFO 74100 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 420.1012706063491
+2026-02-08T18:21:03.239+09:00  INFO 74100 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99133.70041129747
+2026-02-08T18:21:03.239+09:00  INFO 74100 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 3.6576104719362776%/-2.3713604702186784%/0.0978411930161911%
+2026-02-08T18:21:03.239+09:00  INFO 74100 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 9.452091516565815%/-0.3380672885401509%/2.9760029542424795%
+2026-02-08T18:21:03.239+09:00  INFO 74100 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 463/176
+
+
+15분봉/22년/0.5% 상승
+2026-02-08T18:23:34.230+09:00  INFO 71932 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101455.33536848206 / 수익금액 : 1455.3353684820613 / 수익률 : 9.095846053012883% / 총거래횟수 : 2014(622/1392) / 승률 : 30.883812
+2026-02-08T18:23:34.231+09:00  INFO 71932 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.020718302011043077
+2026-02-08T18:23:34.231+09:00  INFO 71932 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.03949947233529327
+2026-02-08T18:23:34.231+09:00  INFO 71932 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.04296136179410959
+2026-02-08T18:23:34.231+09:00  INFO 71932 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.0496914940502422
+2026-02-08T18:23:34.231+09:00  INFO 71932 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 296.2786212263886
+2026-02-08T18:23:34.231+09:00  INFO 71932 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99822.65561527021
+2026-02-08T18:23:34.231+09:00  INFO 71932 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 3.182753281541227%/-2.1529043153268503%/0.02492012617263804%
+2026-02-08T18:23:34.231+09:00  INFO 71932 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 4.609422903020368%/-2.176080083267152%/0.757987171084407%
+2026-02-08T18:23:34.231+09:00  INFO 71932 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 290/44
+
+15분봉/23년/0.5% 상승
+2026-02-08T18:24:56.669+09:00  INFO 30240 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101515.78495676894 / 수익금액 : 1515.784956768941 / 수익률 : 9.473655979805882% / 총거래횟수 : 1030(307/723) / 승률 : 29.805824
+2026-02-08T18:24:56.669+09:00  INFO 30240 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.01983177539917025
+2026-02-08T18:24:56.669+09:00  INFO 30240 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.011766622617259026
+2026-02-08T18:24:56.669+09:00  INFO 30240 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.044767016345450106
+2026-02-08T18:24:56.669+09:00  INFO 30240 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.0450025282319233
+2026-02-08T18:24:56.669+09:00  INFO 30240 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 341.39559503595433
+2026-02-08T18:24:56.669+09:00  INFO 30240 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99922.35917185876
+2026-02-08T18:24:56.669+09:00  INFO 30240 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.629960973074867%/-0.6640542384309811%/0.025955221862481868%
+2026-02-08T18:24:56.669+09:00  INFO 30240 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 4.671003938122886%/-0.3324201219772476%/0.7894713316504901%
+2026-02-08T18:24:56.669+09:00  INFO 30240 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 151/23
+
+15분봉/24년/0.5% 상승
+2026-02-08T18:26:22.332+09:00  INFO 56292 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101360.15377136727 / 수익금액 : 1360.1537713672733 / 수익률 : 8.500961071045458% / 총거래횟수 : 1449(447/1002) / 승률 : 30.848862
+2026-02-08T18:26:22.332+09:00  INFO 56292 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.027983278479838614
+2026-02-08T18:26:22.332+09:00  INFO 56292 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.025391336312674317
+2026-02-08T18:26:22.332+09:00  INFO 56292 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.044581559051012354
+2026-02-08T18:26:22.332+09:00  INFO 56292 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.04442925495557071
+2026-02-08T18:26:22.332+09:00  INFO 56292 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 341.66094708901755
+2026-02-08T18:26:22.332+09:00  INFO 56292 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99974.97859779219
+2026-02-08T18:26:22.332+09:00  INFO 56292 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.077138295376426%/-1.511725590185506%/0.023290304304234132%
+2026-02-08T18:26:22.333+09:00  INFO 56292 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 5.27092627591328%/-2.4677236142740187%/0.7084134225871215%
+2026-02-08T18:26:22.333+09:00  INFO 56292 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 217/48
+
+15분봉/25년/0.5% 상승
+2026-02-08T18:29:56.878+09:00  INFO 74688 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101171.98739586976 / 수익금액 : 1171.9873958697572 / 수익률 : 7.324921224185982% / 총거래횟수 : 1329(412/917) / 승률 : 31.000751
+2026-02-08T18:29:56.878+09:00  INFO 74688 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.015238980997442475
+2026-02-08T18:29:56.878+09:00  INFO 74688 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.020004978903492177
+2026-02-08T18:29:56.878+09:00  INFO 74688 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.029382054547850145
+2026-02-08T18:29:56.878+09:00  INFO 74688 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.04264919370659559
+2026-02-08T18:29:56.878+09:00  INFO 74688 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 208.97364166739885
+2026-02-08T18:29:56.878+09:00  INFO 74688 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99945.98451882126
+2026-02-08T18:29:56.878+09:00  INFO 74688 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.473565001143197%/-1.5491102004717503%/0.020068277326536935%
+2026-02-08T18:29:56.878+09:00  INFO 74688 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 4.4309993948600095%/-1.8873723934460032%/0.6104101020154985%
+2026-02-08T18:29:56.879+09:00  INFO 74688 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 164/54
+
+
+1시간봉/20년/0.5% 상승
+2026-02-08T18:30:42.519+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101899.95132818779 / 수익금액 : 1899.951328187788 / 수익률 : 11.874695801173676% / 총거래횟수 : 566(208/358) / 승률 : 36.749115
+2026-02-08T18:30:42.519+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.04896588297684279
+2026-02-08T18:30:42.519+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.049358201545989466
+2026-02-08T18:30:42.519+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.0
+2026-02-08T18:30:42.519+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.0
+2026-02-08T18:30:42.519+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 298.4580463919999
+2026-02-08T18:30:42.519+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99923.13587462202
+2026-02-08T18:30:42.520+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.7597091902438478%/-1.2119152357785423%/0.03253341315390048%
+2026-02-08T18:30:42.520+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 3.385223799473988%/-1.05282233164653%/0.9895579834311397%
+2026-02-08T18:30:42.520+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 80/27
+
+1시간봉/21년/0.5% 상승
+2026-02-08T18:32:30.336+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 106421.93362241215 / 수익금액 : 6421.933622412151 / 수익률 : 40.13708514007594% / 총거래횟수 : 1858(618/1240) / 승률 : 33.26157
+2026-02-08T18:32:30.337+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.04925544725223863
+2026-02-08T18:32:30.337+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.04979268871656917
+2026-02-08T18:32:30.337+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.04936653560506765
+2026-02-08T18:32:30.337+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.048641379949921015
+2026-02-08T18:32:30.337+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 460.2804397293337
+2026-02-08T18:32:30.337+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99943.65761920593
+2026-02-08T18:32:30.337+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 4.789948965521671%/-2.277070396799536%/0.10996461682212585%
+2026-02-08T18:32:30.337+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 11.395486438907938%/-4.740449907121819%/3.344757095006328%
+2026-02-08T18:32:30.337+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 209/108
+
+1시간봉/22년/0.5% 상승
+2026-02-08T18:33:40.471+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 103383.78978738483 / 수익금액 : 3383.789787384827 / 수익률 : 21.148686171155166% / 총거래횟수 : 1410(492/918) / 승률 : 34.893616
+2026-02-08T18:33:40.471+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.0340259946711271
+2026-02-08T18:33:40.471+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.047382372432074216
+2026-02-08T18:33:40.471+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.04316053893583005
+2026-02-08T18:33:40.471+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.046744574290484064
+2026-02-08T18:33:40.471+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 492.86843470850454
+2026-02-08T18:33:40.471+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99685.76382073599
+2026-02-08T18:33:40.471+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.0936384768690917%/-1.8108349419874687%/0.05794160594837032%
+2026-02-08T18:33:40.472+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 4.935240126164262%/-0.6811316609253482%/1.7623905142629306%
+2026-02-08T18:33:40.472+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 159/58
+
+1시간봉/23년/0.5% 상승
+2026-02-08T18:34:47.485+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101292.2764413725 / 수익금액 : 1292.2764413724944 / 수익률 : 8.076727758578091% / 총거래횟수 : 873(299/574) / 승률 : 34.249714
+2026-02-08T18:34:47.485+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.01869421603766952
+2026-02-08T18:34:47.485+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.01952412764268885
+2026-02-08T18:34:47.485+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.03879401222854728
+2026-02-08T18:34:47.485+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.04523796583147632
+2026-02-08T18:34:47.485+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 258.507766097302
+2026-02-08T18:34:47.486+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99706.07284722484
+2026-02-08T18:34:47.486+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.2329344637626491%/-1.0301075939421933%/0.022128021256378333%
+2026-02-08T18:34:47.486+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 3.424059874829345%/-2.0787836929116565%/0.6730606465481742%
+2026-02-08T18:34:47.486+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 102/41
+
+1시간봉/24년/0.5% 상승
+2026-02-08T18:35:58.580+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 103440.63826133998 / 수익금액 : 3440.6382613399765 / 수익률 : 21.503989133374855% / 총거래횟수 : 1178(421/757) / 승률 : 35.73854
+2026-02-08T18:35:58.580+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.03538224398685019
+2026-02-08T18:35:58.580+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.04093646419697006
+2026-02-08T18:35:58.581+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.046475897829844515
+2026-02-08T18:35:58.581+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.04272352452687245
+2026-02-08T18:35:58.581+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 333.4819692319677
+2026-02-08T18:35:58.581+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99591.55873756557
+2026-02-08T18:35:58.581+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 4.147896716221203%/-1.123531590746552%/0.05891503872157495%
+2026-02-08T18:35:58.581+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 4.652293734901377%/-0.7117450351603111%/1.7919990944479045%
+2026-02-08T18:35:58.581+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 143/47
+
+1시간봉/25년/0.5% 상승
+2026-02-08T18:36:44.441+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101438.66585991059 / 수익금액 : 1438.6658599105867 / 수익률 : 8.991661624441168% / 총거래횟수 : 1192(372/820) / 승률 : 31.208054
+2026-02-08T18:36:44.441+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.02555499835810604
+2026-02-08T18:36:44.441+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.03989547038327523
+2026-02-08T18:36:44.441+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.044758291174817444
+2026-02-08T18:36:44.441+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.045963934239717785
+2026-02-08T18:36:44.441+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 248.9952584658156
+2026-02-08T18:36:44.441+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99718.14425661591
+2026-02-08T18:36:44.441+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.2729612957474274%/-1.178319401384306%/0.024634689382030592%
+2026-02-08T18:36:44.441+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 4.320028022846327%/-2.8501376007733596%/0.7493051353700971%
+2026-02-08T18:36:44.442+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 130/58
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+위 결과로 1시간봉이 제일 안정적으로 판단
+
+1시간봉/20년/0.5% 상승/600분뒤 주문삭제
+2026-02-08T18:56:56.215+09:00  INFO 64616 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101904.41976688974 / 수익금액 : 1904.4197668897395 / 수익률 : 11.902623543060873% / 총거래횟수 : 499(192/307) / 승률 : 38.47695
+2026-02-08T18:56:56.216+09:00  INFO 64616 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.04896588297684279
+2026-02-08T18:56:56.216+09:00  INFO 64616 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.049358201545989466
+2026-02-08T18:56:56.216+09:00  INFO 64616 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.0
+2026-02-08T18:56:56.216+09:00  INFO 64616 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.0
+2026-02-08T18:56:56.216+09:00  INFO 64616 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 200.4853718331999
+2026-02-08T18:56:56.216+09:00  INFO 64616 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99871.91658985999
+2026-02-08T18:56:56.216+09:00  INFO 64616 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 4.492317149407608%/-0.8970576918125516%/0.032609927515235275%
+2026-02-08T18:56:56.216+09:00  INFO 64616 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 6.111583295224228%/-1.6091392419876684%/0.9918852952550729%
+2026-02-08T18:56:56.216+09:00  INFO 64616 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 68/23
+
+1시간봉/21년/0.5% 상승/600분뒤 주문삭제
+2026-02-08T18:58:16.146+09:00  INFO 70556 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 106294.1679186035 / 수익금액 : 6294.1679186035035 / 수익률 : 39.3385494912719% / 총거래횟수 : 1551(542/1009) / 승률 : 34.945194
+2026-02-08T18:58:16.146+09:00  INFO 70556 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.04925544725223863
+2026-02-08T18:58:16.146+09:00  INFO 70556 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.04979268871656917
+2026-02-08T18:58:16.146+09:00  INFO 70556 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.04936653560506765
+2026-02-08T18:58:16.146+09:00  INFO 70556 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.046674023959182964
+2026-02-08T18:58:16.146+09:00  INFO 70556 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 528.1581611457211
+2026-02-08T18:58:16.146+09:00  INFO 70556 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 100000.0
+2026-02-08T18:58:16.146+09:00  INFO 70556 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 3.534990013439983%/-1.917241204330094%/0.10777684792129287%
+2026-02-08T18:58:16.147+09:00  INFO 70556 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 14.283754709559615%/-5.3371159235219245%/3.2782124576059917%
+2026-02-08T18:58:16.147+09:00  INFO 70556 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 166/97
+
+1시간봉/22년/0.5% 상승/600분뒤 주문삭제
+2026-02-08T18:59:40.759+09:00  INFO 71172 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 103512.47866217018 / 수익금액 : 3512.4786621701787 / 수익률 : 21.952991638563617% / 총거래횟수 : 1169(432/737) / 승률 : 36.954662
+2026-02-08T18:59:40.760+09:00  INFO 71172 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.0340259946711271
+2026-02-08T18:59:40.760+09:00  INFO 71172 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.047382372432074216
+2026-02-08T18:59:40.760+09:00  INFO 71172 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.04316053893583005
+2026-02-08T18:59:40.760+09:00  INFO 71172 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.046744574290484064
+2026-02-08T18:59:40.760+09:00  INFO 71172 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 381.1595580530841
+2026-02-08T18:59:40.760+09:00  INFO 71172 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99553.4027941897
+2026-02-08T18:59:40.760+09:00  INFO 71172 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.7383704462725291%/-1.1679605330361482%/0.06014518257140716%
+2026-02-08T18:59:40.760+09:00  INFO 71172 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 8.300248403754177%/-1.347748379197401%/1.8294159698803012%
+2026-02-08T18:59:40.760+09:00  INFO 71172 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 125/52
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+굳이 더안해도... 위 결과로 60분뒤 주문삭제면 충분
+
+1시간봉/20년/1% 상승
+2026-02-08T19:05:28.131+09:00  INFO 75932 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101681.1370350472 / 수익금액 : 1681.1370350471989 / 수익률 : 10.507106469044993% / 총거래횟수 : 210(82/128) / 승률 : 39.04762
+2026-02-08T19:05:28.132+09:00  INFO 75932 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.04896588297684279
+2026-02-08T19:05:28.132+09:00  INFO 75932 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.04397102073022019
+2026-02-08T19:05:28.132+09:00  INFO 75932 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.0
+2026-02-08T19:05:28.132+09:00  INFO 75932 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.0
+2026-02-08T19:05:28.132+09:00  INFO 75932 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 165.75855665399968
+2026-02-08T19:05:28.132+09:00  INFO 75932 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99874.60976549659
+2026-02-08T19:05:28.132+09:00  INFO 75932 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.603262068128788%/-0.5224143488563641%/0.0287865930658767%
+2026-02-08T19:05:28.132+09:00  INFO 75932 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 5.3048654583273676%/-0.710100903179864%/0.8755922057537496%
+2026-02-08T19:05:28.132+09:00  INFO 75932 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 44/7
+
+1시간봉/21년/1% 상승
+2026-02-08T19:06:15.722+09:00  INFO 75204 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 103549.94043058543 / 수익금액 : 3549.940430585426 / 수익률 : 22.18712769115891% / 총거래횟수 : 948(287/661) / 승률 : 30.274263
+2026-02-08T19:06:15.722+09:00  INFO 75204 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.03944430013400779
+2026-02-08T19:06:15.722+09:00  INFO 75204 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.04979268871656917
+2026-02-08T19:06:15.722+09:00  INFO 75204 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.04936653560506765
+2026-02-08T19:06:15.722+09:00  INFO 75204 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.048641379949921015
+2026-02-08T19:06:15.722+09:00  INFO 75204 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 568.9674980366099
+2026-02-08T19:06:15.722+09:00  INFO 75204 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99885.14135770203
+2026-02-08T19:06:15.722+09:00  INFO 75204 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 4.334195433260811%/-2.277070396799536%/0.060786651208654556%
+2026-02-08T19:06:15.722+09:00  INFO 75204 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 11.023180304976359%/-2.9768285801433194%/1.8489273075965762%
+2026-02-08T19:06:15.723+09:00  INFO 75204 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 132/35
+
+1시간봉/22년/1% 상승
+2026-02-08T19:07:31.063+09:00  INFO 72580 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101904.76629821639 / 수익금액 : 1904.7662982163893 / 수익률 : 11.904789363852434% / 총거래횟수 : 579(187/392) / 승률 : 32.297062
+2026-02-08T19:07:31.063+09:00  INFO 72580 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.0340259946711271
+2026-02-08T19:07:31.063+09:00  INFO 72580 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.047382372432074216
+2026-02-08T19:07:31.063+09:00  INFO 72580 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.04316053893583005
+2026-02-08T19:07:31.063+09:00  INFO 72580 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.04654760230628596
+2026-02-08T19:07:31.063+09:00  INFO 72580 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 384.98863262753343
+2026-02-08T19:07:31.063+09:00  INFO 72580 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99947.9312228784
+2026-02-08T19:07:31.063+09:00  INFO 72580 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.034433660218474%/-1.2434126724999262%/0.032615861270828585%
+2026-02-08T19:07:31.063+09:00  INFO 72580 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 4.6929995418857295%/-0.7445948765163848%/0.9920657803210361%
+2026-02-08T19:07:31.064+09:00  INFO 72580 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 79/18
+
+
+1시간봉/20년/2% 상승
+2026-02-08T19:04:12.916+09:00  INFO 48600 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 100425.39354760498 / 수익금액 : 425.393547604981 / 수익률 : 2.658709672531131% / 총거래횟수 : 39(15/24) / 승률 : 38.46154
+2026-02-08T19:04:12.916+09:00  INFO 48600 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.04896588297684279
+2026-02-08T19:04:12.916+09:00  INFO 48600 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.02917341977309551
+2026-02-08T19:04:12.917+09:00  INFO 48600 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.0
+2026-02-08T19:04:12.917+09:00  INFO 48600 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.0
+2026-02-08T19:04:12.917+09:00  INFO 48600 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 96.75981394259998
+2026-02-08T19:04:12.917+09:00  INFO 48600 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99958.83030615201
+2026-02-08T19:04:12.917+09:00  INFO 48600 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 0.6167147164600465%/-0.36973941619999096%/0.007284136089126388%
+2026-02-08T19:04:12.917+09:00  INFO 48600 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 1.193837628208894%/-0.16249962435249474%/0.2215591393775943%
+2026-02-08T19:04:12.917+09:00  INFO 48600 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 11/0
+2026-02-08T19:04:12.954+09:00  WARN 48600 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-08T19:04:13.326+09:00  INFO 48600 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2026-02-08T19:04:13.337+09:00  INFO 48600 --- [           main] com.jung.backtest.MainAppApplication     : Started MainAppApplication in 18.53 seconds (process running for 19.129)
+
+1시간봉/21년/2% 상승
+2026-02-08T19:03:31.106+09:00  INFO 66936 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 102246.34454851234 / 수익금액 : 2246.3445485123375 / 수익률 : 14.03965342820211% / 총거래횟수 : 296(88/208) / 승률 : 29.72973
+2026-02-08T19:03:31.106+09:00  INFO 66936 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.03944430013400779
+2026-02-08T19:03:31.106+09:00  INFO 66936 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.04923114080991864
+2026-02-08T19:03:31.106+09:00  INFO 66936 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.04765304301267159
+2026-02-08T19:03:31.106+09:00  INFO 66936 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.048641379949921015
+2026-02-08T19:03:31.106+09:00  INFO 66936 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 510.15319319463083
+2026-02-08T19:03:31.106+09:00  INFO 66936 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99608.4765302285
+2026-02-08T19:03:31.106+09:00  INFO 66936 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 4.334195433260811%/-2.277070396799536%/0.03846480391288249%
+2026-02-08T19:03:31.106+09:00  INFO 66936 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 5.086510060338969%/-2.6796404021536544%/1.1699711190168423%
+2026-02-08T19:03:31.107+09:00  INFO 66936 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 48/4
+
+1시간봉/22년/2% 상승
+2026-02-08T19:02:39.549+09:00  INFO 74892 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 100485.10709406667 / 수익금액 : 485.10709406666865 / 수익률 : 3.031919337916679% / 총거래횟수 : 154(44/110) / 승률 : 28.57143
+2026-02-08T19:02:39.549+09:00  INFO 74892 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff BTC : 0.025820205432043997
+2026-02-08T19:02:39.549+09:00  INFO 74892 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff ETH : 0.047382372432074216
+2026-02-08T19:02:39.549+09:00  INFO 74892 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff XRP : 0.03205566963267148
+2026-02-08T19:02:39.549+09:00  INFO 74892 --- [           main] c.jung.backtest.service.BackTestService  : maxDiff SOL : 0.041836515769148264
+2026-02-08T19:02:39.549+09:00  INFO 74892 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 304.4785452412434
+2026-02-08T19:02:39.549+09:00  INFO 74892 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99642.39830609238
+2026-02-08T19:02:39.549+09:00  INFO 74892 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.7709611013036919%/-0.7504647392527658%/0.008306628323059393%
+2026-02-08T19:02:39.549+09:00  INFO 74892 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 4.574545246592334%/-1.5960416095151233%/0.25265994482638987%
+2026-02-08T19:02:39.550+09:00  INFO 74892 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 31/0
+
+
+1시간봉/20년/0% 상승
+2026-02-08T23:44:08.290+09:00  INFO 78564 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 103359.55712470383 / 수익금액 : 3359.5571247038315 / 수익률 : 20.997232029398948% / 총거래횟수 : 1935(681/1254) / 승률 : 35.193798
+2026-02-08T23:44:08.291+09:00  INFO 78564 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 332.25090081739995
+2026-02-08T23:44:08.291+09:00  INFO 78564 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99558.6923287921
+2026-02-08T23:44:08.291+09:00  INFO 78564 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.463050485870008%/-1.2119152357785423%/0.057526663094243695%
+2026-02-08T23:44:08.291+09:00  INFO 78564 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 5.487297754232077%/-2.3659787104167664%/1.7497693357832456%
+2026-02-08T23:44:08.291+09:00  INFO 78564 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 185/143
+
+1시간봉/20년/0.2% 상승
+2026-02-08T23:45:31.323+09:00  INFO 55668 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 102329.21057428996 / 수익금액 : 2329.2105742899585 / 수익률 : 14.55756608931224% / 총거래횟수 : 1169(427/742) / 승률 : 36.526947
+2026-02-08T23:45:31.324+09:00  INFO 55668 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 298.4580463919999
+2026-02-08T23:45:31.324+09:00  INFO 55668 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99587.48181064833
+2026-02-08T23:45:31.324+09:00  INFO 55668 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.7597091902438478%/-1.2119152357785423%/0.0398837427104445%
+2026-02-08T23:45:31.324+09:00  INFO 55668 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 3.376228330266895%/-2.37887510219025%/1.2131305074426868%
+2026-02-08T23:45:31.324+09:00  INFO 55668 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 123/68
+
+1시간봉/20년/0.5% 상승
+2026-02-08T18:30:42.519+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101899.95132818779 / 수익금액 : 1899.951328187788 / 수익률 : 11.874695801173676% / 총거래횟수 : 566(208/358) / 승률 : 36.749115
+2026-02-08T18:30:42.519+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 298.4580463919999
+2026-02-08T18:30:42.519+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99923.13587462202
+2026-02-08T18:30:42.520+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.7597091902438478%/-1.2119152357785423%/0.03253341315390048%
+2026-02-08T18:30:42.520+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 3.385223799473988%/-1.05282233164653%/0.9895579834311397%
+2026-02-08T18:30:42.520+09:00  INFO 71068 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 80/27
+
+1시간봉/21년/0% 상승
+2026-02-08T23:48:22.940+09:00  INFO 78072 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 108400.15331620621 / 수익금액 : 8400.153316206211 / 수익률 : 52.500958226288816% / 총거래횟수 : 3724(1293/2431) / 승률 : 34.72073
+2026-02-08T23:48:22.940+09:00  INFO 78072 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 557.0228928456518
+2026-02-08T23:48:22.940+09:00  INFO 78072 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99931.76565226463
+2026-02-08T23:48:22.940+09:00  INFO 78072 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 4.298775706296146%/-2.209511694780122%/0.14383824171585982%
+2026-02-08T23:48:22.940+09:00  INFO 78072 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 12.003819515879787%/-4.367610235229859%/4.375079852190736%
+
+1시간봉/21년/0.2% 상승
+2026-02-08T23:52:55.416+09:00  INFO 73384 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 109340.90222986552 / 수익금액 : 9340.902229865518 / 수익률 : 58.38063893665949% / 총거래횟수 : 2884(1004/1880) / 승률 : 34.81276
+2026-02-08T23:52:55.416+09:00  INFO 73384 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 557.0228928456518
+2026-02-08T23:52:55.416+09:00  INFO 73384 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99882.79898363986
+2026-02-08T23:52:55.416+09:00  INFO 73384 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 4.565067354441726%/-2.277070396799536%/0.1599469559908479%
+2026-02-08T23:52:55.416+09:00  INFO 73384 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 13.245179529357756%/-3.740288709481774%/4.865053244721624%
+2026-02-08T23:52:55.417+09:00  INFO 73384 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 263/218
+
+1시간봉/21년/0.5% 상승
+2026-02-08T18:32:30.336+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 106421.93362241215 / 수익금액 : 6421.933622412151 / 수익률 : 40.13708514007594% / 총거래횟수 : 1858(618/1240) / 승률 : 33.26157
+2026-02-08T18:32:30.337+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 460.2804397293337
+2026-02-08T18:32:30.337+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99943.65761920593
+2026-02-08T18:32:30.337+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 4.789948965521671%/-2.277070396799536%/0.10996461682212585%
+2026-02-08T18:32:30.337+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 11.395486438907938%/-4.740449907121819%/3.344757095006328%
+2026-02-08T18:32:30.337+09:00  INFO 19268 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 209/108
+
+1시간봉/22년/0% 상승
+2026-02-08T23:49:32.315+09:00  INFO 77708 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 104080.13082466043 / 수익금액 : 4080.1308246604312 / 수익률 : 25.500817654127694% / 총거래횟수 : 4240(1482/2758) / 승률 : 34.95283
+2026-02-08T23:49:32.315+09:00  INFO 77708 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 488.36166672058357
+2026-02-08T23:49:32.315+09:00  INFO 77708 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99691.12973524803
+2026-02-08T23:49:32.315+09:00  INFO 77708 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.1951513477201843%/-2.1299746533135475%/0.0698652538469252%
+2026-02-08T23:49:32.316+09:00  INFO 77708 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 5.823070026356254%/-0.5682653658567688%/2.1250681378439746%
+2026-02-08T23:49:32.316+09:00  INFO 77708 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 393/293
+
+1시간봉/22년/0.2% 상승
+2026-02-08T23:53:53.913+09:00  INFO 75308 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 105446.60498613608 / 수익금액 : 5446.604986136081 / 수익률 : 34.041281163350504% / 총거래횟수 : 2720(968/1752) / 승률 : 35.588234
+2026-02-08T23:53:53.914+09:00  INFO 75308 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 339.61829870694305
+2026-02-08T23:53:53.914+09:00  INFO 75308 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99801.25270424446
+2026-02-08T23:53:53.914+09:00  INFO 75308 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.5246437674218214%/-1.8694320592699112%/0.09326378400917947%
+2026-02-08T23:53:53.914+09:00  INFO 75308 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 8.117483003028793%/-1.140586807886757%/2.8367734302792087%
+2026-02-08T23:53:53.914+09:00  INFO 75308 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 268/189
+
+1시간봉/22년/0.5% 상승
+2026-02-08T18:33:40.471+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 103383.78978738483 / 수익금액 : 3383.789787384827 / 수익률 : 21.148686171155166% / 총거래횟수 : 1410(492/918) / 승률 : 34.893616
+2026-02-08T18:33:40.471+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 492.86843470850454
+2026-02-08T18:33:40.471+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99685.76382073599
+2026-02-08T18:33:40.471+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.0936384768690917%/-1.8108349419874687%/0.05794160594837032%
+2026-02-08T18:33:40.472+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 4.935240126164262%/-0.6811316609253482%/1.7623905142629306%
+2026-02-08T18:33:40.472+09:00  INFO 61500 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 159/58
+
+1시간봉/23년/0% 상승
+2026-02-08T23:50:16.175+09:00  INFO 12952 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101048.18075848903 / 수익금액 : 1048.180758489034 / 수익률 : 6.551129740556462% / 총거래횟수 : 4104(1381/2723) / 승률 : 33.650097
+2026-02-08T23:50:16.175+09:00  INFO 12952 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 231.06882050630838
+2026-02-08T23:50:16.175+09:00  INFO 12952 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99300.30161466036
+2026-02-08T23:50:16.175+09:00  INFO 12952 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.5021969929556689%/-1.1203109041968673%/0.0179483006590588%
+2026-02-08T23:50:16.175+09:00  INFO 12952 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 4.266975632846607%/-2.7964893761871283%/0.5459274783797051%
+2026-02-08T23:50:16.176+09:00  INFO 12952 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 370/306
+
+1시간봉/23년/0.2% 상승
+2026-02-08T23:54:47.487+09:00  INFO 79392 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101506.19148019188 / 수익금액 : 1506.1914801918756 / 수익률 : 9.413696751199224% / 총거래횟수 : 2113(738/1375) / 승률 : 34.926643
+2026-02-08T23:54:47.487+09:00  INFO 79392 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 225.73429511030872
+2026-02-08T23:54:47.487+09:00  INFO 79392 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99419.8021785968
+2026-02-08T23:54:47.487+09:00  INFO 79392 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.1623231535265404%/-1.1303565203217658%/0.02579095000328555%
+2026-02-08T23:54:47.488+09:00  INFO 79392 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 5.123192187575296%/-1.9332708363183884%/0.7844747292666021%
+2026-02-08T23:54:47.488+09:00  INFO 79392 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 223/143
+
+1시간봉/23년/0.5% 상승
+2026-02-08T18:34:47.485+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101292.2764413725 / 수익금액 : 1292.2764413724944 / 수익률 : 8.076727758578091% / 총거래횟수 : 873(299/574) / 승률 : 34.249714
+2026-02-08T18:34:47.485+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 258.507766097302
+2026-02-08T18:34:47.486+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99706.07284722484
+2026-02-08T18:34:47.486+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.2329344637626491%/-1.0301075939421933%/0.022128021256378333%
+2026-02-08T18:34:47.486+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 3.424059874829345%/-2.0787836929116565%/0.6730606465481742%
+2026-02-08T18:34:47.486+09:00  INFO 62800 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 102/41
+
+1시간봉/24년/0% 상승
+2026-02-08T23:50:57.193+09:00  INFO 67100 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 105629.72624616508 / 수익금액 : 5629.726246165083 / 수익률 : 35.185789038531766% / 총거래횟수 : 4063(1460/2603) / 승률 : 35.93404
+2026-02-08T23:50:57.194+09:00  INFO 67100 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 307.6501157297962
+2026-02-08T23:50:57.194+09:00  INFO 67100 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99440.0833444637
+2026-02-08T23:50:57.194+09:00  INFO 67100 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 3.1442559160168457%/-1.140443034425607%/0.0963994220233747%
+2026-02-08T23:50:57.194+09:00  INFO 67100 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 9.287559748986315%/-0.1562926681274803%/2.932149086544314%
+2026-02-08T23:50:57.194+09:00  INFO 67100 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 357/300
+
+1시간봉/24년/0.2% 상승
+2026-02-08T23:55:50.300+09:00  INFO 73176 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 104852.33972597803 / 수익금액 : 4852.339725978032 / 수익률 : 30.3271232873627% / 총거래횟수 : 2520(921/1599) / 승률 : 36.54762
+2026-02-08T23:55:50.300+09:00  INFO 73176 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 317.9646300305767
+2026-02-08T23:55:50.300+09:00  INFO 73176 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99480.52092569157
+2026-02-08T23:55:50.300+09:00  INFO 73176 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 3.7209216999224735%/-1.0414620661475054%/0.08308800900647315%
+2026-02-08T23:55:50.300+09:00  INFO 73176 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 5.887457490932957%/-0.6230488855132534%/2.5272602739468915%
+2026-02-08T23:55:50.301+09:00  INFO 73176 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 245/159
+
+1시간봉/24년/0.5% 상승
+2026-02-08T18:35:58.580+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 103440.63826133998 / 수익금액 : 3440.6382613399765 / 수익률 : 21.503989133374855% / 총거래횟수 : 1178(421/757) / 승률 : 35.73854
+2026-02-08T18:35:58.581+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99591.55873756557
+2026-02-08T18:35:58.581+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 4.147896716221203%/-1.123531590746552%/0.05891503872157495%
+2026-02-08T18:35:58.581+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 4.652293734901377%/-0.7117450351603111%/1.7919990944479045%
+2026-02-08T18:35:58.581+09:00  INFO 52300 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 143/47
+
+1시간봉/25년/0% 상승
+2026-02-08T23:51:44.593+09:00  INFO 78992 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 102782.45342044701 / 수익금액 : 2782.453420447011 / 수익률 : 17.390333877793818% / 총거래횟수 : 4025(1352/2673) / 승률 : 33.590065
+2026-02-08T23:51:44.594+09:00  INFO 78992 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 251.43426443014914
+2026-02-08T23:51:44.594+09:00  INFO 78992 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99837.77072215216
+2026-02-08T23:51:44.594+09:00  INFO 78992 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.8833455146299458%/-1.2195567736007433%/0.04764475035012005%
+2026-02-08T23:51:44.594+09:00  INFO 78992 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 4.105158306519934%/-1.5136998265949841%/1.4491944898161515%
+2026-02-08T23:51:44.594+09:00  INFO 78992 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 355/313
+
+1시간봉/25년/0.2% 상승
+2026-02-08T23:56:47.563+09:00  INFO 79024 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 102699.33429628992 / 수익금액 : 2699.3342962899187 / 수익률 : 16.87083935181199% / 총거래횟수 : 2549(851/1698) / 승률 : 33.38564
+2026-02-08T23:56:47.563+09:00  INFO 79024 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 248.9952584658156
+2026-02-08T23:56:47.563+09:00  INFO 79024 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99822.73151132339
+2026-02-08T23:56:47.563+09:00  INFO 79024 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.9957839648691336%/-1.157434706028198%/0.04622147767619725%
+2026-02-08T23:56:47.563+09:00  INFO 79024 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 3.056135734679083%/-1.0254921311632643%/1.4059032793176662%
+2026-02-08T23:56:47.564+09:00  INFO 79024 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 235/178
+
+1시간봉/25년/0.5% 상승
+2026-02-08T18:36:44.441+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101438.66585991059 / 수익금액 : 1438.6658599105867 / 수익률 : 8.991661624441168% / 총거래횟수 : 1192(372/820) / 승률 : 31.208054
+2026-02-08T18:36:44.441+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99718.14425661591
+2026-02-08T18:36:44.441+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.2729612957474274%/-1.178319401384306%/0.024634689382030592%
+2026-02-08T18:36:44.441+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 4.320028022846327%/-2.8501376007733596%/0.7493051353700971%
+2026-02-08T18:36:44.442+09:00  INFO 72636 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 130/58
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+위 결과로 0.2% 상승시 오더블록 판단이면 충분
+
+아래는 모의투자 목표 수익률 정보
+
+1시간봉/20년/0.2% 상승
+2026-02-08T23:45:31.323+09:00  INFO 55668 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 102329.21057428996 / 수익금액 : 2329.2105742899585 / 수익률 : 14.55756608931224% / 총거래횟수 : 1169(427/742) / 승률 : 36.526947
+2026-02-08T23:45:31.324+09:00  INFO 55668 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 298.4580463919999
+2026-02-08T23:45:31.324+09:00  INFO 55668 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99587.48181064833
+2026-02-08T23:45:31.324+09:00  INFO 55668 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.7597091902438478%/-1.2119152357785423%/0.0398837427104445%
+2026-02-08T23:45:31.324+09:00  INFO 55668 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 3.376228330266895%/-2.37887510219025%/1.2131305074426868%
+2026-02-08T23:45:31.324+09:00  INFO 55668 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 123/68
+
+1시간봉/21년/0.2% 상승
+2026-02-08T23:52:55.416+09:00  INFO 73384 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 109340.90222986552 / 수익금액 : 9340.902229865518 / 수익률 : 58.38063893665949% / 총거래횟수 : 2884(1004/1880) / 승률 : 34.81276
+2026-02-08T23:52:55.416+09:00  INFO 73384 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 557.0228928456518
+2026-02-08T23:52:55.416+09:00  INFO 73384 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99882.79898363986
+2026-02-08T23:52:55.416+09:00  INFO 73384 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 4.565067354441726%/-2.277070396799536%/0.1599469559908479%
+2026-02-08T23:52:55.416+09:00  INFO 73384 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 13.245179529357756%/-3.740288709481774%/4.865053244721624%
+2026-02-08T23:52:55.417+09:00  INFO 73384 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 263/218
+
+1시간봉/22년/0.2% 상승
+2026-02-08T23:53:53.913+09:00  INFO 75308 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 105446.60498613608 / 수익금액 : 5446.604986136081 / 수익률 : 34.041281163350504% / 총거래횟수 : 2720(968/1752) / 승률 : 35.588234
+2026-02-08T23:53:53.914+09:00  INFO 75308 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 339.61829870694305
+2026-02-08T23:53:53.914+09:00  INFO 75308 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99801.25270424446
+2026-02-08T23:53:53.914+09:00  INFO 75308 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.5246437674218214%/-1.8694320592699112%/0.09326378400917947%
+2026-02-08T23:53:53.914+09:00  INFO 75308 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 8.117483003028793%/-1.140586807886757%/2.8367734302792087%
+2026-02-08T23:53:53.914+09:00  INFO 75308 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 268/189
+
+1시간봉/23년/0.2% 상승
+2026-02-08T23:54:47.487+09:00  INFO 79392 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 101506.19148019188 / 수익금액 : 1506.1914801918756 / 수익률 : 9.413696751199224% / 총거래횟수 : 2113(738/1375) / 승률 : 34.926643
+2026-02-08T23:54:47.487+09:00  INFO 79392 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 225.73429511030872
+2026-02-08T23:54:47.487+09:00  INFO 79392 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99419.8021785968
+2026-02-08T23:54:47.487+09:00  INFO 79392 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.1623231535265404%/-1.1303565203217658%/0.02579095000328555%
+2026-02-08T23:54:47.488+09:00  INFO 79392 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 5.123192187575296%/-1.9332708363183884%/0.7844747292666021%
+2026-02-08T23:54:47.488+09:00  INFO 79392 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 223/143
+
+1시간봉/24년/0.2% 상승
+2026-02-08T23:55:50.300+09:00  INFO 73176 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 104852.33972597803 / 수익금액 : 4852.339725978032 / 수익률 : 30.3271232873627% / 총거래횟수 : 2520(921/1599) / 승률 : 36.54762
+2026-02-08T23:55:50.300+09:00  INFO 73176 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 317.9646300305767
+2026-02-08T23:55:50.300+09:00  INFO 73176 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99480.52092569157
+2026-02-08T23:55:50.300+09:00  INFO 73176 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 3.7209216999224735%/-1.0414620661475054%/0.08308800900647315%
+2026-02-08T23:55:50.300+09:00  INFO 73176 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 5.887457490932957%/-0.6230488855132534%/2.5272602739468915%
+2026-02-08T23:55:50.301+09:00  INFO 73176 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 245/159
+
+1시간봉/25년/0.2% 상승
+2026-02-08T23:56:47.563+09:00  INFO 79024 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 102699.33429628992 / 수익금액 : 2699.3342962899187 / 수익률 : 16.87083935181199% / 총거래횟수 : 2549(851/1698) / 승률 : 33.38564
+2026-02-08T23:56:47.563+09:00  INFO 79024 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 248.9952584658156
+2026-02-08T23:56:47.563+09:00  INFO 79024 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99822.73151132339
+2026-02-08T23:56:47.563+09:00  INFO 79024 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.9957839648691336%/-1.157434706028198%/0.04622147767619725%
+2026-02-08T23:56:47.563+09:00  INFO 79024 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 3.056135734679083%/-1.0254921311632643%/1.4059032793176662%
+2026-02-08T23:56:47.564+09:00  INFO 79024 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 235/178
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+위에꺼 다 오판단
+
+5분봉/25년/0.5% 상승
+2026-02-10T02:47:53.829+09:00  INFO 75864 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 99806.54487802809 / 수익금액 : -193.4551219719142 / 수익률 : -1.2090945123244636% / 총거래횟수 : 958(229/729) / 승률 : 23.903965
+2026-02-10T02:47:53.830+09:00  INFO 75864 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 341.83135975391065
+2026-02-10T02:47:53.830+09:00  INFO 75864 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99616.52683585051
+2026-02-10T02:47:53.830+09:00  INFO 75864 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.1826218533298742%/-1.3895709789434476%/-0.0033125877049985297%
+2026-02-10T02:47:53.830+09:00  INFO 75864 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 2.939275298710254%/-3.076936335547816%/-0.10075787602703862%
+2026-02-10T02:47:53.830+09:00  INFO 75864 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 169/22
+
+15분봉/25년/0.2% 상승
+2026-02-10T01:32:03.917+09:00  INFO 38104 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 97311.6370019731 / 수익금액 : -2688.3629980269034 / 수익률 : -16.802268737668147% / 총거래횟수 : 4356(1145/3211) / 승률 : 26.285583
+2026-02-10T01:32:03.917+09:00  INFO 38104 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 623.6223300640022
+2026-02-10T01:32:03.917+09:00  INFO 38104 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 97305.09598552437
+2026-02-10T01:32:03.917+09:00  INFO 38104 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.1705600422287716%/-2.931632257084675%/-0.04603361297991274%
+2026-02-10T01:32:03.917+09:00  INFO 38104 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 2.2991208504674434%/-4.814058583151928%/-1.4001890614723458%
+2026-02-10T01:32:03.918+09:00  INFO 38104 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 491/196
+
+15분봉/25년/0.5% 상승
+2026-02-10T01:28:58.721+09:00  INFO 74224 --- [           main] c.jung.backtest.service.BackTestService  : ===== BACK TEST END =====
+2026-02-10T01:28:58.721+09:00  INFO 74224 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 98794.21620095549 / 수익금액 : -1205.7837990445114 / 수익률 : -7.536148744028197% / 총거래횟수 : 1255(292/963) / 승률 : 23.266932
+2026-02-10T01:28:58.721+09:00  INFO 74224 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 399.60117868343855
+2026-02-10T01:28:58.721+09:00  INFO 74224 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 98779.76157993641
+2026-02-10T01:28:58.721+09:00  INFO 74224 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.473565001143197%/-1.6919955426867999%/-0.020646982860351222%
+2026-02-10T01:28:58.721+09:00  INFO 74224 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 1.5810463568957858%/-2.6381420447698476%/-0.628012395335683%
+2026-02-10T01:28:58.721+09:00  INFO 74224 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 162/49
+
+15분봉/25년/1% 상승
+2026-02-10T01:26:13.190+09:00  INFO 59648 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 99379.44575037886 / 수익금액 : -620.5542496211419 / 수익률 : -3.878464060132137% / 총거래횟수 : 211(39/172) / 승률 : 18.483412
+2026-02-10T01:26:13.190+09:00  INFO 59648 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 188.09635533682058
+2026-02-10T01:26:13.191+09:00  INFO 59648 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99358.10052064498
+2026-02-10T01:26:13.191+09:00  INFO 59648 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 0.886116385708101%/-0.7958793420008988%/-0.010625928931868868%
+2026-02-10T01:26:13.191+09:00  INFO 59648 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 0.3721346066278784%/-0.8759751296806826%/-0.32320533834434473%
+2026-02-10T01:26:13.191+09:00  INFO 59648 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 32/4
+
+1시간봉/25년/0.2% 상승
+2026-02-10T01:20:05.003+09:00  INFO 46368 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 97840.0817305002 / 수익금액 : -2159.9182694998017 / 수익률 : -13.499489184373761% / 총거래횟수 : 2115(572/1543) / 승률 : 27.044916
+2026-02-10T01:20:05.004+09:00  INFO 46368 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 418.55168175553763
+2026-02-10T01:20:05.004+09:00  INFO 46368 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 97755.68895271639
+2026-02-10T01:20:05.004+09:00  INFO 46368 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.9957839648691336%/-1.3308256723972591%/-0.036984901874996604%
+2026-02-10T01:20:05.004+09:00  INFO 46368 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 0.8885782935865791%/-5.496109827753116%/-1.1249574320311466%
+2026-02-10T01:20:05.004+09:00  INFO 46368 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 233/134
+
+1시간봉/25년/0.5% 상승
+2026-02-10T01:47:56.377+09:00  INFO 57736 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 98058.23810630065 / 수익금액 : -1941.761893699353 / 수익률 : -12.136011835620957% / 총거래횟수 : 1045(239/806) / 승률 : 22.870813
+2026-02-10T01:47:56.377+09:00  INFO 57736 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 523.182419746468
+2026-02-10T01:47:56.377+09:00  INFO 57736 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 97830.38097332646
+2026-02-10T01:47:56.377+09:00  INFO 57736 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.0632100910353985%/-1.5811873548574114%/-0.033249347494851936%
+2026-02-10T01:47:56.378+09:00  INFO 57736 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 2.438594085081604%/-5.714495566131245%/-1.0113343196350797%
+2026-02-10T01:47:56.378+09:00  INFO 57736 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 128/45
+
+1시간봉/25년/1% 상승
+2026-02-10T01:49:42.981+09:00  INFO 82856 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 98924.83817430913 / 수익금액 : -1075.1618256908696 / 수익률 : -6.719761410567934% / 총거래횟수 : 379(80/299) / 승률 : 21.10818
+2026-02-10T01:49:42.981+09:00  INFO 82856 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 431.0088325881627
+2026-02-10T01:49:42.981+09:00  INFO 82856 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 98803.94803734393
+2026-02-10T01:49:42.981+09:00  INFO 82856 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 2.3211226984636597%/-0.8867066253216763%/-0.018410305234432694%
+2026-02-10T01:49:42.981+09:00  INFO 82856 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 1.259753328284569%/-3.82693425059515%/-0.5599801175473278%
+2026-02-10T01:49:42.981+09:00  INFO 82856 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 61/11
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+분할매도 구현 테스트(TP만 분할매도)
+
+1시간봉/25년/0.5% 상승
+2026-02-18T15:16:56.631+09:00  INFO 86160 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 97920.49561420565 / 수익금액 : -2079.504385794353 / 수익률 : -12.996902411214705% / 총거래횟수 : 1140(342/798) / 승률 : 30.000002
+2026-02-18T15:16:56.631+09:00  INFO 86160 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 605.3602397485852
+2026-02-18T15:16:56.631+09:00  INFO 86160 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 97614.96294044044
+2026-02-18T15:16:56.631+09:00  INFO 86160 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.4680231183308934%/-1.494704206415554%/-0.03560795181154714%
+2026-02-18T15:16:56.631+09:00  INFO 86160 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 2.445804520236652%/-3.926516137091312%/-1.0830752009345588%
+2026-02-18T15:16:56.632+09:00  INFO 86160 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 136/53
+
+15분봉/25년/0.5% 상승
+2026-02-18T15:15:40.325+09:00  INFO 109604 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 98604.32321981818 / 수익금액 : -1395.6767801818205 / 수익률 : -8.722979876136378% / 총거래횟수 : 1490(457/1033) / 승률 : 30.67114
+2026-02-18T15:15:40.325+09:00  INFO 109604 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 399.60117868343855
+2026-02-18T15:15:40.325+09:00  INFO 109604 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 98537.72564630813
+2026-02-18T15:15:40.325+09:00  INFO 109604 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.5570311011564628%/-1.6919955426867999%/-0.023898575003113365%
+2026-02-18T15:15:40.325+09:00  INFO 109604 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 1.8539629786807381%/-3.6828638060233057%/-0.7269149896780315%
+2026-02-18T15:15:40.325+09:00  INFO 109604 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 189/59
+
+5분봉/25년/0.5% 상승
+2026-02-18T15:20:17.901+09:00  INFO 108144 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 99659.22048881272 / 수익금액 : -340.7795111872838 / 수익률 : -2.1298719449205237% / 총거래횟수 : 1153(350/803) / 승률 : 30.355593
+2026-02-18T15:20:17.902+09:00  INFO 108144 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 260.93409498756944
+2026-02-18T15:20:17.902+09:00  INFO 108144 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99438.71561289717
+2026-02-18T15:20:17.902+09:00  INFO 108144 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.086834608510071%/-1.3360839889391174%/-0.005835265602521981%
+2026-02-18T15:20:17.902+09:00  INFO 108144 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 1.9098581992118853%/-3.7343740680517836%/-0.17748932874337695%
+2026-02-18T15:20:17.902+09:00  INFO 108144 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 195/29
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+분할매도 구현 테스트(TP/SL 둘다 분할매도)
+1시간봉/25년/0.5% 상승
+2026-02-18T15:21:37.214+09:00  INFO 95508 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 98215.04658786677 / 수익금액 : -1784.9534121332254 / 수익률 : -11.15595882583266% / 총거래횟수 : 1730(438/1292) / 승률 : 25.317919
+2026-02-18T15:21:37.215+09:00  INFO 95508 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 420.7711432900319
+2026-02-18T15:21:37.215+09:00  INFO 95508 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 97959.0123198664
+2026-02-18T15:21:37.215+09:00  INFO 95508 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.1703622405570058%/-1.5022697873868311%/-0.03056427075570592%
+2026-02-18T15:21:37.215+09:00  INFO 95508 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 2.8240539140785588%/-4.621205523504523%/-0.9296632354860551%
+2026-02-18T15:21:37.215+09:00  INFO 95508 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 213/84
+
+15분봉/25년/0.5% 상승
+2026-02-18T15:23:27.528+09:00  INFO 108732 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 98504.25532484187 / 수익금액 : -1495.7446751581301 / 수익률 : -9.348404219738313% / 총거래횟수 : 2348(585/1763) / 승률 : 24.91482
+2026-02-18T15:23:27.528+09:00  INFO 108732 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 385.93787005394654
+2026-02-18T15:23:27.528+09:00  INFO 108732 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 98435.94226891173
+2026-02-18T15:23:27.528+09:00  INFO 108732 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.1142389599840499%/-2.1563288171795647%/-0.025612066355447435%
+2026-02-18T15:23:27.528+09:00  INFO 108732 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 2.30833052198077%/-3.301297171449914%/-0.7790336849781928%
+2026-02-18T15:23:27.528+09:00  INFO 108732 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 299/96
+
+5분봉/25년/0.5% 상승
+2026-02-18T15:26:50.764+09:00  INFO 109680 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 99590.6705322377 / 수익금액 : -409.3294677623053 / 수익률 : -2.558309173514408% / 총거래횟수 : 1808(444/1364) / 승률 : 24.557522
+2026-02-18T15:26:50.764+09:00  INFO 109680 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 177.88847821299873
+2026-02-18T15:26:50.764+09:00  INFO 109680 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99229.9886560772
+2026-02-18T15:26:50.764+09:00  INFO 109680 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 0.9557743637536987%/-1.6987282843665525%/-0.007009066228806597%
+2026-02-18T15:26:50.764+09:00  INFO 109680 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 2.42946185571036%/-4.302404037514862%/-0.21319243112620068%
+2026-02-18T15:26:50.764+09:00  INFO 109680 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 296/44
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+OB로직 타임프레임 병행
+
+5분+15분
+2026-02-18T16:30:24.404+09:00  INFO 113368 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 100067.44336741422 / 수익금액 : 67.44336741422012 / 수익률 : 0.42152104633887577% / 총거래횟수 : 58(16/42) / 승률 : 27.586206
+2026-02-18T16:30:24.405+09:00  INFO 113368 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 71.93379262356211
+2026-02-18T16:30:24.405+09:00  INFO 113368 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99993.58176807003
+2026-02-18T16:30:24.405+09:00  INFO 113368 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 0.29229863414257123%/-0.40285199106747316%/0.0011548521817503453%
+2026-02-18T16:30:24.405+09:00  INFO 113368 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 0.42172680851399497%/-0.40285199106747316%/0.035126753861573%
+2026-02-18T16:30:24.405+09:00  INFO 113368 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 10/0
+
+15분+1시간
+2026-02-18T16:37:00.525+09:00  INFO 112956 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 100100.97027842425 / 수익금액 : 100.9702784242545 / 수익률 : 0.6310642401515907% / 총거래횟수 : 45(6/39) / 승률 : 13.333334
+2026-02-18T16:37:00.525+09:00  INFO 112956 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 202.79068249386546
+2026-02-18T16:37:00.525+09:00  INFO 112956 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99969.29835979918
+2026-02-18T16:37:00.525+09:00  INFO 112956 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 0.9375041694454921%/-0.2176502618601262%/0.0017289431237029877%
+2026-02-18T16:37:00.525+09:00  INFO 112956 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 1.1327118654905461%/-0.35481070342539167%/0.0525886866792992%
+2026-02-18T16:37:00.525+09:00  INFO 112956 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 10/1
+
+
+5분+1시간 인데 주문삭제 5분간격으로 바꾸고, 하위 OB가 상위 OB 완전포함, 상위OB신호탐지 없이함
+2026-02-18T18:18:32.168+09:00  INFO 66724 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 100070.95065797499 / 수익금액 : 70.95065797498683 / 수익률 : 0.4434416123436677% / 총거래횟수 : 54(13/41) / 승률 : 24.074074
+2026-02-18T18:18:32.169+09:00  INFO 66724 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 45.86991952416611
+2026-02-18T18:18:32.169+09:00  INFO 66724 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99954.13008047584
+2026-02-18T18:18:32.169+09:00  INFO 66724 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 0.3472890453022046%/-0.13035480931721397%/0.0012149085269689526%
+2026-02-18T18:18:32.169+09:00  INFO 66724 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 0.5335507627078186%/-0.1792343618484665%/0.03695346769530564%
+2026-02-18T18:18:32.169+09:00  INFO 66724 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 12/0
+2026-02-18T18:18:32.169+09:00  INFO 66724 --- [           main] c.jung.backtest.service.BackTestService  : test cnt : 33959 2525
+
+5분+1시간 인데 주문삭제 5분간격으로 바꾸고, 하위 OB와 상위 OB 조금만 겹쳐도, 상위OB신호탐지 없이함
+2026-02-18T18:24:57.714+09:00  INFO 110920 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 100182.6592992113 / 수익금액 : 182.6592992113001 / 수익률 : 1.1416206200706256% / 총거래횟수 : 90(26/64) / 승률 : 28.88889
+2026-02-18T18:24:57.715+09:00  INFO 110920 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 67.28144804038675
+2026-02-18T18:24:57.715+09:00  INFO 110920 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99988.63554935012
+2026-02-18T18:24:57.715+09:00  INFO 110920 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 0.4749126923274161%/-0.190191000487539%/0.003127727726220892%
+2026-02-18T18:24:57.715+09:00  INFO 110920 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 0.49816081214148655%/-0.2041075368363636%/0.09513505167255214%
+2026-02-18T18:24:57.715+09:00  INFO 110920 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 16/1
+2026-02-18T18:24:57.715+09:00  INFO 110920 --- [           main] c.jung.backtest.service.BackTestService  : test cnt : 33959 3620
+2026-02-21T12:57:21.682+09:00  INFO 121660 --- [           main] c.jung.backtest.service.BackTestService  : total tax 72.0(39.41764821768558%) 
+
+15분+1시간 인데 주문삭제 15분간격으로 바꾸고, 하위 OB와 상위 OB 조금만 겹쳐도, 상위OB신호탐지 없이함
+2026-02-19T00:28:45.304+09:00  INFO 112656 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 99923.60563881992 / 수익금액 : -76.3943611800787 / 수익률 : -0.47746475737549193% / 총거래횟수 : 191(41/150) / 승률 : 21.46597
+2026-02-19T00:28:45.305+09:00  INFO 112656 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 152.38468644425825
+2026-02-19T00:28:45.305+09:00  INFO 112656 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99718.27408940293
+2026-02-19T00:28:45.305+09:00  INFO 112656 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.620811418400899%/-0.3226913613187207%/-0.0013081226229465536%
+2026-02-19T00:28:45.305+09:00  INFO 112656 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 1.5859554755336829%/-1.1377058922988%/-0.039788729781291006%
+2026-02-19T00:28:45.305+09:00  INFO 112656 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 31/6
+2026-02-19T00:28:45.305+09:00  INFO 112656 --- [           main] c.jung.backtest.service.BackTestService  : test cnt : 33838 6360
+2026-02-21T12:52:54.957+09:00  INFO 121400 --- [           main] c.jung.backtest.service.BackTestService  : total tax 152.8(-200.0147623982561%)
+
+5분+15분 인데 주문삭제 5분간격으로 바꾸고, 하위 OB와 상위 OB 조금만 겹쳐도, 상위OB신호탐지 없이함
+2026-02-19T00:35:33.905+09:00  INFO 112448 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 99880.33485968816 / 수익금액 : -119.66514031184488 / 수익률 : -0.7479071269490305% / 총거래횟수 : 157(36/121) / 승률 : 22.929937
+2026-02-19T00:35:33.905+09:00  INFO 112448 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 142.11440532472147
+2026-02-19T00:35:33.906+09:00  INFO 112448 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99847.88079097614
+2026-02-19T00:35:33.906+09:00  INFO 112448 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 0.3992143233002025%/-0.48621533922578236%/-0.002049060621778166%
+2026-02-19T00:35:33.906+09:00  INFO 112448 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 0.8417185656417131%/-0.5859042869191399%/-0.062325593912419215%
+2026-02-19T00:35:33.906+09:00  INFO 112448 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 29/3
+2026-02-19T00:35:33.906+09:00  INFO 112448 --- [           main] c.jung.backtest.service.BackTestService  : test cnt : 33959 7196
+2026-02-21T13:04:02.782+09:00  INFO 110880 --- [           main] c.jung.backtest.service.BackTestService  : total tax 125.60000000000001(-104.95955603502325%)
+
+5분+1시간 인데 주문삭제 5분간격으로 바꾸고, 하위 OB와 상위 OB 조금만 겹쳐도 겹치는 부분 OB로 잡아 거래
+2026-02-21T13:16:24.746+09:00  INFO 121676 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 100212.24872348258 / 수익금액 : 212.24872348258214 / 수익률 : 1.3265545217661383% / 총거래횟수 : 82(22/60) / 승률 : 26.82927
+2026-02-21T13:16:24.746+09:00  INFO 121676 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 58.73672916463556
+2026-02-21T13:16:24.746+09:00  INFO 121676 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99988.63554935012
+2026-02-21T13:16:24.746+09:00  INFO 121676 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 0.4312438365336675%/-0.190191000487539%/0.003634395950044215%
+2026-02-21T13:16:24.747+09:00  INFO 121676 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 0.6270872510853224%/-0.1921271816688204%/0.1105462101471782%
+2026-02-21T13:16:24.747+09:00  INFO 121676 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 14/1
+2026-02-21T13:16:24.747+09:00  INFO 121676 --- [           main] c.jung.backtest.service.BackTestService  : total tax 65.60000000000001(30.907135234376742%)
+
+15분+1시간 인데 주문삭제 15분간격으로 바꾸고, 하위 OB와 상위 OB 조금만 겹쳐도 겹치는 부분 OB로 잡아 거래
+2026-02-21T13:12:49.913+09:00  INFO 121168 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 100114.45919141047 / 수익금액 : 114.45919141046761 / 수익률 : 0.7153699463154225% / 총거래횟수 : 178(37/141) / 승률 : 20.786516
+2026-02-21T13:12:49.914+09:00  INFO 121168 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 164.83229089913084
+2026-02-21T13:12:49.914+09:00  INFO 121168 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99824.24772798237
+2026-02-21T13:12:49.914+09:00  INFO 121168 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 1.620811418400899%/-0.3016362136312637%/0.0019599176611381423%
+2026-02-21T13:12:49.914+09:00  INFO 121168 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 1.7304188550346224%/-1.1398571882109536%/0.059614162192951826%
+2026-02-21T13:12:49.914+09:00  INFO 121168 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 29/4
+2026-02-21T13:12:49.914+09:00  INFO 121168 --- [           main] c.jung.backtest.service.BackTestService  : total tax 142.4(124.41115321995638%) 
+
+5분+15분인데 주문삭제 5분간격으로 바꾸고, 하위 OB와 상위 OB 조금만 겹쳐도 겹치는 부분 OB로 잡아 거래
+2026-02-21T13:20:37.860+09:00  INFO 65968 --- [           main] c.jung.backtest.service.BackTestService  : 최종자산 : 99870.3039130562 / 수익금액 : -129.6960869438044 / 수익률 : -0.8106005433987775% / 총거래횟수 : 140(30/110) / 승률 : 21.428572
+2026-02-21T13:20:37.860+09:00  INFO 65968 --- [           main] c.jung.backtest.service.BackTestService  : maxPainPrice : 133.98583697718573
+2026-02-21T13:20:37.860+09:00  INFO 65968 --- [           main] c.jung.backtest.service.BackTestService  : minMoney : 99837.84984434418
+2026-02-21T13:20:37.860+09:00  INFO 65968 --- [           main] c.jung.backtest.service.BackTestService  : daily max/min/avg rate : 0.3992143233002935%/-0.48621533922578236%/-0.0022208234065719933%
+2026-02-21T13:20:37.860+09:00  INFO 65968 --- [           main] c.jung.backtest.service.BackTestService  : max/min/avg rate : 0.8763799059821396%/-0.43141271414269794%/-0.06755004528323146%
+2026-02-21T13:20:37.860+09:00  INFO 65968 --- [           main] c.jung.backtest.service.BackTestService  : monthly tradeCnt(max/min) : 26/3
+2026-02-21T13:20:37.860+09:00  INFO 65968 --- [           main] c.jung.backtest.service.BackTestService  : total tax 112.0(-86.35572794769676%) 
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+유동적 손절 or 수익

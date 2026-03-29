@@ -1,0 +1,164 @@
+buildscript {
+    ext {
+        springBootVersion = '2.5.3'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.8.RELEASE"
+    }
+}
+
+subprojects {
+
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+
+    group = 'com.jung'
+    version = '0.0.3'
+    sourceCompatibility = 11
+
+    repositories {
+        mavenCentral()
+    }
+
+
+    task initSourceFolders {
+        sourceSets*.java.srcDirs*.each {
+            if( !it.exists() ) {
+                it.mkdirs()
+            }
+        }
+
+        sourceSets*.resources.srcDirs*.each {
+            if( !it.exists() ) {
+                it.mkdirs()
+            }
+        }
+    }
+
+    configurations {
+        developmentOnly
+        runtimeClasspath {
+            extendsFrom developmentOnly
+        }
+    }
+
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter-web'
+        implementation 'org.projectlombok:lombok:1.18.20'
+        annotationProcessor 'org.projectlombok:lombok:1.18.20'
+        implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+
+        //test
+        testImplementation ('org.springframework.boot:spring-boot-starter-test:2.5.2')
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+
+project(':Common') {
+    dependencies {
+
+        implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+    }
+}
+
+project(':client') {
+    dependencies {
+        implementation project(':Common')
+        implementation 'com.auth0:java-jwt:3.18.2'
+        implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+        implementation 'com.google.code.gson:gson:2.8.9'
+
+    }
+}
+
+project(':Domain') {
+    dependencies {
+        implementation project(':Common')
+    }
+}
+
+
+project(':app-logdb') {
+    dependencies {
+        implementation project(':Common')
+        implementation project(':Domain')
+        //jpa
+        implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.5.6'
+        implementation 'mysql:mysql-connector-java:8.0.27'
+        //배치관련
+        implementation 'org.springframework.boot:spring-boot-starter-batch:2.6.0'
+        implementation 'org.springframework.boot:spring-boot-starter-quartz:2.6.0'
+    }
+}
+
+project(':app-webapp') {
+    dependencies {
+        implementation project(':Common')
+        implementation project(':Domain')
+        //thymeleaf
+        implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.6.0'
+    }
+}
+
+project(':app-faketrade') {
+    dependencies {
+        implementation project(':Common')
+        implementation project(':Domain')
+        implementation project(':client')
+
+        //배치관련
+        implementation 'org.springframework.boot:spring-boot-starter-batch:2.6.0'
+        implementation 'org.springframework.boot:spring-boot-starter-quartz:2.6.0'
+
+        implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+        //jpa
+        implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.5.6'
+        implementation 'mysql:mysql-connector-java:8.0.27'
+    }
+}
+
+project(':app-realtrade') {
+    dependencies {
+        implementation project(':Common')
+        implementation project(':Domain')
+        implementation project(':client')
+
+        //배치관련
+        implementation 'org.springframework.boot:spring-boot-starter-batch:2.6.0'
+        implementation 'org.springframework.boot:spring-boot-starter-quartz:2.6.0'
+
+        implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+        //jpa
+        implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.5.6'
+        implementation 'mysql:mysql-connector-java:8.0.27'
+
+    }
+}
+
+project(':app-boxlog') {
+    dependencies {
+        implementation project(':Common')
+        implementation project(':Domain')
+        implementation project(':client')
+
+        //배치관련
+        implementation 'org.springframework.boot:spring-boot-starter-batch:2.6.0'
+        implementation 'org.springframework.boot:spring-boot-starter-quartz:2.6.0'
+
+        implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+        //jpa
+        implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.5.6'
+        implementation 'mysql:mysql-connector-java:8.0.27'
+    }
+}

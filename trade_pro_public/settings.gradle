@@ -1,0 +1,3 @@
+rootProject.name = 'TradePro'
+include 'Common','client','Domain','app-logdb', 'app-webapp', 'app-faketrade', "app-realtrade", 'app-boxlog'
+

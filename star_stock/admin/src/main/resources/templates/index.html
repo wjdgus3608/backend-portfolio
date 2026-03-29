@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>추천 리스트</title>
+</head>
+
+<body>
+    <h2>추천 리스트</h2>
+    <div th:each="item : ${resultList}">
+        <a th:text="${item}" href="#" th:searchTime="${item}" th:onclick="goDetailPage(this.getAttribute('searchTime'))"></a></br>
+    </div>
+
+</body>
+
+<script th:inline="javascript">
+    function goDetailPage(searchTime){
+        location.href="/detail-view.do?searchTime="+searchTime;
+    }
+</script>
+
+</html>

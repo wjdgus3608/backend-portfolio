@@ -1,0 +1,15 @@
+server:
+  port: 3030
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/remote_db?serverZoneId=Asia/Seoul
+    username: root
+    password: 1q2w3e4r!Q
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql  # schema.sql 경로 지정
+
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG

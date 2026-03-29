@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자동매도 어드민</title>
+</head>
+
+<body>
+    <h2>자동매도 어드민</h2>
+    <div th:each="item : ${resultList}">
+        <div>종목:  <span th:text="${item.stockName}" style="font-weight: bold;"></span>  (<span th:text="${item.stockShortCode}"></span>)</div>
+        <label>자동매도 활성화:</label>
+        <input type="checkbox"
+               th:checked="${item.autoSellActive}"
+               th:value="${item.stockShortCode}"
+               class="auto-sell-checkbox"
+               th:data-stock="${item.stockShortCode}" /><br/>
+
+        <div>매수가격: <span th:text="${item.myPrice}"></span></div>
+        <div>매수일: <span th:text="${#strings.substring(item.buyTimeAt, 0, 4)} + '-' +
+                   ${#strings.substring(item.buyTimeAt, 4, 6)} + '-' +
+                   ${#strings.substring(item.buyTimeAt, 6, 8)} + ' ' +
+                   ${#strings.substring(item.buyTimeAt, 8, 10)} + ':' +
+                   ${#strings.substring(item.buyTimeAt, 10, 12)} + ':' +
+                   ${#strings.substring(item.buyTimeAt, 12, 14)}">
+                    </span>
+        </div>
+        <div>매도전략: [<span th:text="${item.sellType}"></span>]  <span th:text="${item.sellDesc}"></span></div>
+        <div>
+            기대익절가: <span th:text="${item.futureGainPrice}"></span>
+            (<span th:text="${#numbers.formatPercent(item.futureGainRate, 1, 2)}"></span>)
+        </div>
+        <div>
+            기대손절가: <span th:text="${item.futurePainPrice}"></span>
+            (<span th:text="${#numbers.formatPercent(item.futurePainRate, 1, 2)}"></span>)
+        </div>
+        <br/>
+    </div>
+
+    <button type="button" onclick="saveStatus()">저장</button>
+
+</body>
+
+<script th:inline="javascript">
+    function saveStatus() {
+        const checkboxes = document.querySelectorAll('.auto-sell-checkbox');
+        const data = [];
+
+        checkboxes.forEach(cb => {
+            data.push({
+                stockShortCode: cb.getAttribute('data-stock'),
+                autoSellActive: cb.checked
+            });
+        });
+
+        fetch('/save', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if (response.ok) {
+                alert("저장 완료!");
+            } else {
+                alert("저장 실패!");
+            }
+        })
+        .catch(error => {
+            console.error("에러:", error);
+            alert("에러 발생!");
+        });
+    }
+</script>
+
+</html>

@@ -1,0 +1,27 @@
+server:
+  port: 7000
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/remote_db?serverZoneId=Asia/Seoul
+    username: root
+    password: 1q2w3e4r!Q
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  sql:
+    init:
+      mode: never
+      schema-locations: classpath:schema.sql  # schema.sql 경로 지정
+
+
+my:
+  api-client-server: "http://localhost:9090"
+  db-client-server: "http://localhost:1010"

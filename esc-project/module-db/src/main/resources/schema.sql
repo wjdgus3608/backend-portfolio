@@ -1,0 +1,7 @@
+
+CREATE TABLE IF NOT EXISTS logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    type TEXT NOT NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP
+);

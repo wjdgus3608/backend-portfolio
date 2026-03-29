@@ -1,0 +1,11 @@
+rootProject.name = 'exit2'
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+}
+
+include 'exit2-batch'
+include 'exit2-core'
+include 'exit2-backtest'

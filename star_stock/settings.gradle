@@ -1,0 +1,9 @@
+rootProject.name = 'star_stock'
+include 'message-module'
+include 'logic-api-module'
+include 'domain'
+include 'client'
+include 'common'
+include 'admin'
+include 'sell-admin'
+

@@ -1,0 +1,33 @@
+server:
+  port: 7000
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3307/esc_local_db?serverZoneId=Asia/Seoul
+    username: root
+    password: 1q2w3e4r!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+#    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql  # schema.sql 경로 지정
+
+#logging:
+#  level:
+#    org.hibernate.SQL: debug             # 실제 실행되는 SQL 로그
+#    org.hibernate.type.descriptor.sql: trace  # 바인딩되는 파라미터 값까지 확인 가능
+
+my:
+  api-client-server: "http://localhost:9090"
+  db-client-server: "http://localhost:1010"
+  kospi-path: "kospi_data.csv"
+  kosdaq-path: "kosdaq_data.csv"

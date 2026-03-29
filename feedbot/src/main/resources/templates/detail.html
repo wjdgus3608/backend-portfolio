@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date List</title>
+</head>
+<body>
+<h1>추천 목록</h1>
+<ul>
+    <!-- dates 리스트에서 각 날짜를 링크로 표시 -->
+    <th:block th:each="stock : ${data}">
+        <li>
+            <div th:text="|종목명 : ${stock.stockKey.stockName}|"></div>
+            <div th:text="|배당락일 : ${stock.feedDate}|"></div>
+            <div th:text="|매도기한 : ${stock.dropDate}|"></div>
+            <div th:text="|수익추천 : ${stock.sellRate}|"></div></br>
+        </li>
+    </th:block>
+</ul>
+</body>
+</html>

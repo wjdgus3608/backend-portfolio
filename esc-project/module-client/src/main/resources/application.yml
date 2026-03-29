@@ -1,0 +1,19 @@
+#server:
+#  port: 9090
+#ISA계좌(테스트용)
+#my:
+#  app-key: "PSaVK39hSgBYckRbJ9dM1n46pKJYtpqIS1D1"
+#  app-secret: "5meeKef2owGfQZag4ni7VCWAAiOA881ibtPSefxkKpYotxsRws0fSJ3EQpno6C3mR3HfF51yMk7KRablCKJrLvPpGRe735zlAsVr+tQbHRxuVyin+fEBs8TCxl/rqRTIxKW36W9OTfxd9irSFIR87022cZf5ES5vscxvcG2n2oy3idBYk0c="
+#  account-front: "43119304"
+#  account-back: "01"
+
+
+server:
+  port: 9091
+##실전계좌
+my:
+  app-key: "PStkC2EJUWQlloG81uXbCVNwp5uCfDqFJTvz"
+  app-secret: "O46Ft9Sied137bjb3fKc9B+uH/JL9P6VeDX9a0B2f3ROJnnAW/JE0DzCK8bEabNhQ5eRtBk32S7oSqTvEPwX0j10GgUGQNBYE8ciKQ3wz9alCGiRjtRmpNjn5RXx5KxsZleki+92u9tGP7BlsY/ojmSuX6LKG2KcbCumuMscQ4SjoK5l56A="
+  account-front: "43115686"
+  account-back: "01"
+

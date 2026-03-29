@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>로그 모니터링</title>
+</head>
+<body>
+<h2>로그 리스트</h2>
+<table class="table table-striped" width="100%">
+    <tr>
+        <th width="10%" style="text-align: left">ID</th>
+        <th width="70%" style="text-align: left">내용</th>
+        <th width="20%" style="text-align: left">시간</th>
+    </tr>
+    <tr th:each="data : ${logs}">
+        <td th:text="${data.id}"></td>
+        <td th:text="${data.log}"></td>
+        <td th:text="${data.time}"></td>
+    </tr>
+</table>
+</body>
+</html>

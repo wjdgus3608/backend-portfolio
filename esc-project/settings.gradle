@@ -1,0 +1,13 @@
+rootProject.name = 'esc-project'
+include 'logic'
+include 'domain'
+include 'module-db'
+include 'module-adm'
+include 'module-client'
+include 'module-fake-trade'
+include 'logic'
+include 'common'
+include 'module-backtest'
+include 'module-backteston'
+include 'module-real-trade'
+

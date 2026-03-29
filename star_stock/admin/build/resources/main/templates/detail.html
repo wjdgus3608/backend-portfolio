@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>상세보기</title>
+</head>
+<body>
+    <h2 th:text="${searchTime}"></h2>
+    <div th:each="item : ${result}">
+        <tr th:text="${item.stockName}"></tr>
+    </div>
+
+</body>
+</html>
